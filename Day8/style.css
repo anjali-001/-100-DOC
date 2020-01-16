@@ -1,6 +1,8 @@
 *{
 	background-color:  #b3e0ff;
 	font-style: sans-serif;
+	margin:0;
+	padding: 0;
 }
 
 .preheader p{
@@ -111,7 +113,7 @@ position: absolute;
 
 }
 
-.favourite h3{
+/*.favourite h3{
 	margin-left: -45%;
 	font-weight: bold;
 	letter-spacing: .01rem;
@@ -121,7 +123,9 @@ position: absolute;
 
 .para{
     margin-left: -65%;
-}	
+}	*/
+
+
 
 /*footer{
 	background-color: #333333;
@@ -151,31 +155,46 @@ footer p{
 	height: auto;
 }*/
 
-
 .footer{
   background-color: #000!important;
   color: white;
   padding: 1rem 0 1rem;
 }
 .footer svg.svg-inline--fa{
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   margin: 1.2rem .5rem 0 0 ;
   background-color: rgba(0, 0, 0, 0);
-  color: #a0ccdb;
+  border: 2px solid white!important;
+  padding: 6px;
+  color: #FFFFFF;
+  border-radius: 50%;
 }
 .footer svg.svg-inline--fa:hover{
-  color: white !important;
+  color: black !important;
+  background-color: white;
 }
 .footer2{
-	background-color: black;
+	background-color:  #0d0d0d;
 	color: white;
 	font-size: 16px;
 	padding-top: 4rem;
 	padding-bottom: 3rem;
 }
-
+.footer2 p{
+	background-color:  #0d0d0d;
+}
 @media(max-width:767px ){
-	.home-h1{
+	.intro{ 
 		font-size: 1.3rem;
+	}
+	.shop{
+		font-size: 1.3rem;
+		padding-bottom: 2rem;
+	}
+	.btn{
+		padding: 0;
+		margin: 0;
+		left: 40%;
+		font-size: 1rem;
 	}
 }
