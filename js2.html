@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	// While loops
+	var i=1;
+	while(i<100){
+		document.write(i);
+		i++;
+		document.write("<br>");
+	}
+
+	// For loops, functions.
+
+	sum(10,20);
+	sum(15,25);
+
+	function sum(a,b){
+		var add= a+b;
+		document.write("The sum of two numbers is" +add+"<br>");
+	}
+
+	// Arrays in JS
+	// .concat concatenates 
+
+	// Prompt box
+	// var name= prompt("What is your name?");
+	// if(name!=""){
+	// 	document.write("Nice to meet you "+name +"."+ "<br>");
+	// }
+	function myfun(){
+	var userconfirmation= confirm("do you want to visit website");
+	if(userconfirmation==true){
+		window.open("https://www.google.com/");
+		return true;
+	}else{
+		document.write("User does not want to visit website");
+		return false;
+	}
+}
+
+</script>
+<input type="button" name="" onclick="mufun()" value="Click me">
+</body>
+</html>
