@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="Anjali">Hello</p>
+<p class="welcome">World!</p>
+<p class="welcome">World.</p>
+<p class="welcome">World?</p>
+<h1 id="changecss">Let's see.</h1>
+<h1 id="changecss1">Let's see again.</h1>
+
+
+<script type="text/javascript">
+	// strings
+	 // DOM
+	 var a = document.getElementById("Anjali").innerHTML;
+	 document.write(a);
+</script>
+
+<script type="text/javascript">
+	var b = document.getElementsByClassName("welcome")[1].innerHTML;
+	document.write(b);
+</script>
+<!-- access tag names -->
+<script type="text/javascript">
+	var tag= document.getElementsByTagName("p");
+	document.write(tag);
+</script>
+<!-- Access first elements -->
+<script type="text/javascript">
+	var c = document.querySelector('p').innerHTML;
+	document.write(c); 
+</script>
+
+<script type="text/javascript">
+	document.getElementById('changecss').style.color = "red";
+	document.getElementById('changecss1').setAttribute("style", "color:red; background-color:black; text-align:center;height:100px;");
+</script>
+
+<script type="text/javascript">
+	document.write(window.location.href);
+	document.write("<br>");
+
+</script>
+
+<button onclick="mufun()">Click Me</button>
+<script type="text/javascript">
+	function myfun(){
+		window.location.assign("https://www.google.com/");
+	}
+</script>
+</body>
+</html>
