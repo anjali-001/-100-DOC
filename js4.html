@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="divone">This is the first line.
+<button onclick="myfun('divone')">Divone</button>
+</div>
+
+<div id="divtwo">This is the second line.
+<button onclick="myfun('divtwo')">Divone</button>
+</div>
+
+<div id="divthree">This is the third line.
+<button onclick="myfun('divthree')">Divone</button>
+</div>
+
+<button onclick="mywholepage()">Whole page</button>
+
+<script type="text/javascript">
+	
+	function mywholepage(){
+		window.print();
+	}
+
+	function myfun(paravalue){
+		var backup = document.body.innerHTML;
+		var divcontent = document.getElementById(paravalue).innerHTML;
+		document.body.innerHTML = divcontent;
+		window.print();
+		document.body.innerHTML = backup;
+	}
+</script>
+</body>
+</html>
