@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Welcome Guest</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var guestName = ["guest1", "guest2", "guest3", "guest4", "guest5"];
+	console.log(guestName);
+	var name = prompt("What is your name?");
+	
+
+
+	var checkname = guestName.includes(name);
+	if(checkname==true){
+		alert("Welcome " +name+ " You are invited.");
+	}else{
+		alert("Sorry, you are not invited.");
+	}
+
+	
+	
+</script>
+</body>
+</html>
