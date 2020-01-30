@@ -1,0 +1,41 @@
+
+
+
+<script type="text/javascript">
+
+let database = [
+	{
+		username : 'anjali',
+		password : 'anj',
+	}
+];
+
+let status = [
+	{
+		name :'name1',
+		status : 'Hello World!',
+	},
+	{
+		name: 'name2',
+		status: 'Hello!',
+	}
+];
+
+
+const username = prompt('Enter your username');
+const password = prompt('Enter your password');
+
+const login = (user, pass) => {
+	if(user===database[0].username && pass === database[0].password){
+		// console.log(status);
+		for(let value of status){
+			console.log(value);
+		}
+
+	}else{
+		alert('Username or password is incorrect');
+	}
+}
+
+login(username,password);
+</script>
