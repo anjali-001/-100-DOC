@@ -1,0 +1,35 @@
+<script >
+	// "use strict"
+	// Advanced JavaScript
+
+	// console.log(this);
+
+	// function sum(){
+	// 	var add = 2+2;
+	// 	console.log("sumof two no. is "+add);
+	// 	console.log(this);
+	// }
+	// sum();
+
+	const anj ={
+		name: "anjali",
+		qualif: "undergraduate",
+		sum: function(){
+		var add = 2+2;
+		console.log("sumof two no. is "+add);
+		console.log(this.name);
+		console.log(this);
+
+		function child(){
+			var name = "anja";
+			console.log("child method name: "+name);
+			console.log(this);
+
+		}
+		child();
+	}
+
+	}
+
+	anj.sum();
+</script>
