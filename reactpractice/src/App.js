@@ -5,8 +5,8 @@ import Practice1 from './components/Practice1'
 import MyInfo from './components/MyInfo';
 import Navbar from './components/Navbar';
 import MainContent from './components/MainContent';
-import Footer from './components/Footer';
-import Joke from './components/Joke'
+import Footer from './Footer';
+import Joke from './Joke'
 
 
 
