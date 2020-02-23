@@ -6,6 +6,7 @@ import MyInfo from './components/MyInfo';
 import Navbar from './components/Navbar';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
+import Joke from './components/Joke'
 
 
 
@@ -14,11 +15,13 @@ function App() {
 
     
     <div className="App">
-    <Practice1/>
+      <Joke/>
+
+    {/* <Practice1/>
     <MyInfo/>
     <Navbar/>
     <MainContent/>
-    <Footer/>
+    <Footer/> */}
       
     </div>
   );
