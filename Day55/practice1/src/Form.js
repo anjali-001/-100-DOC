@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import FormStyle from './FormStyle.css'
 
 class Form extends Component {
 
@@ -25,15 +26,15 @@ class Form extends Component {
 
     render(){
         return(
-            <form>
-                <input type='text' 
+            <form className="form-body">
+                <input className='firstname' type='text' 
                 placeholder='First Name' 
                 value={this.state.firstName}
                 name='firstName' 
                 onChange={this.handleChange}/><br/><br/>
 
 
-                <div>
+                <div className="check-section">
                 <input type='checkbox'
                 value={this.state.glutenFree}
                 name='glutenFree' 
@@ -57,7 +58,7 @@ class Form extends Component {
                 
                 <button>Submit</button>
 
-                <div>
+                <div className="form-response">
                     <h3>{this.state.firstName}</h3>
                     <h3>Gluten Free? {this.state.glutenFree}</h3>
                     <h3>Kosher? {this.state.kosher}</h3>
