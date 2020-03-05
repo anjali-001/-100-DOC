@@ -40,7 +40,8 @@ button:hover {
     
 }
 
-.form-response div{
+.form-response, .form-response h3, .form-response textarea{
     color: black;
-    background-color: darkgrey;
+    background-color: lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);;
 }
