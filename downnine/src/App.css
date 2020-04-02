@@ -1,0 +1,18 @@
+:root{
+    --mainGrey: #1a1a1a;
+    --mainDark:   #000000;
+    --lightPink: #ff8080;
+    --darkPink: #972727;
+    --mainWhite: #ffffff;
+    --lightYellow:#e68a00;
+    --darkYellow: #6e4404;
+    
+    
+
+}
+
+body{
+    font-family:'Merriweather', serif !important;
+    background-color: var(--mainWhite) !important;
+    color: var(--mainDark)!important;
+}
