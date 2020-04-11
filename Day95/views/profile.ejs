@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {background:black}
+            h1{color:white; text-align: center;}
+            p{color:white; text-align: center;} 
+
+        </style>
+    </head>
+    <body>
+        <%- include ('partials/nav.ejs'); %>
+        <h1>This is the profile of <%= person %></h1>
+        <p>Age <strong/><%= data.age %></p>
+    </body>
+</html>
