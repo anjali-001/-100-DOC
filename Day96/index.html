@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.5.0.min.js"></script>
+        <style>
+            div{
+                height:30px;
+                width:100vw;
+                background: black;
+                color: white;
+                text-align: center;
+                text-transform: capitalize;
+            }
+        </style>
+    </head>
+    <body>
+        <button> Click me</button>
+        <div id='myID' class="myClass">This is the div tag.</div>
+        <p>This is a p tag.</p>
+        <input type="text">
+        <span id="focusid">Welcome</span>
+        <span id="blurid">Bye</span>
+
+        <ul>
+            <li>Anjali</li>
+            <li>Akash</li>
+        </ul>
+
+
+        <script>
+            $(document).ready(function(){
+                // $('button').click(function(){
+                //     alert('Hello World!');
+                // })
+
+            $('p').on({
+                mouseenter:function(){
+                    $(this).css('backgroundColor','red');
+                },
+                mouseleave:function(){
+                    $(this).css('backgroundColor','blue');
+                },
+                click:function(){
+                    alert('this is handling multiple events');
+                }
+            })
+
+
+            $('button').click(function(){
+                $('#myID').toggle(1000);
+                $('ul').prepend('<li>Papa</li>');
+                $('ul').prepend('<li>Mummy</li>');
+            });
+
+            $('span').hide();
+
+            $('input').focus(function(){
+                $('#focusid').show().fadeOut(3000);
+            });
+
+            $('input').blur(function(){
+                $('#blurid').show().fadeOut(3000);
+            });
+            
+            
+               
+            });
+        </script>
+    </body>
+</html>
