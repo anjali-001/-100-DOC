@@ -29,9 +29,20 @@
      width: 100%;
      height: 100%;
      transform-style: preserve-3d;
-     transform: rotateX(-20deg) rotateY(25deg) translate3D(-75px, -50x, 150px);
+     transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50x, 150px);
      
  }
+
+ section .box div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform:rotateX(-20deg) rotateY(25deg) translate3d(-75px,-50px,150px);
+
+}
 
  section .box div span {
     position: absolute;
@@ -44,14 +55,21 @@
     background: #ccc;
  }
 
- section .box div span:nth-child(1){
+ section .box div span:nth-child(1)
+ {
      transform: rotateX(0deg) translate3d(0,0,200px);
  }
- section .box div span:nth-child(2){
+ section .box div span:nth-child(2)
+{
     transform: rotateY(90deg) translate3d(0,0,-200px);
 }
-section .box div span:nth-child(3){
+section .box div span:nth-child(3)
+{
     transform: rotateX(90deg) translate3d(0,0,200px);
 }
+
+
+
+
 
 
